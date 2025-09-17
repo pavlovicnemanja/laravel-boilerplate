@@ -21,6 +21,44 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## 🐳 Docker Setup
+
+This Laravel application comes with a complete Docker development environment. Get started in minutes:
+
+### Quick Start
+
+```bash
+# Copy Docker environment file
+cp docker.env .env
+
+# Start the application (builds, installs, and sets up everything)
+make install
+```
+
+**Access your application at:** http://localhost:8080
+
+### Services Included
+
+- **Laravel Application** (PHP 8.2 + FPM)
+- **Nginx** web server (port 8080)
+- **MySQL 8.0** database (port 3306)
+- **Redis** for caching and sessions (port 6379)
+- **Queue Worker** for background jobs
+- **MailHog** for email testing (port 8025)
+
+### Common Commands
+
+```bash
+make up        # Start containers
+make down      # Stop containers
+make shell     # Access app container
+make test      # Run tests
+make migrate   # Run migrations
+make logs      # View logs
+```
+
+For detailed Docker documentation, see [DOCKER.md](DOCKER.md).
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
