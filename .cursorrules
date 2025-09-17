@@ -77,6 +77,8 @@
 - Keep README files updated with setup and deployment instructions
 - Document environment variables and their purposes
 - Use type hints for method parameters and return types
+- Create a `.md` documentation file in the `.docs` folder for every major functionality or feature implemented
+- Documentation files should include purpose, usage examples, configuration options, and any relevant implementation details
 
 ### Frontend Guidelines (when applicable)
 - Use Laravel Mix/Vite for asset compilation
